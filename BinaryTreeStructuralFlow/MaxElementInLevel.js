@@ -33,7 +33,7 @@ let levelOrder = (root) => {
     let max = Number.MIN_VALUE;
     for (let i = 0; i < size; i++) {
       let node = queue.shift();
-      //   levelList.push({ level: level, nodeVal: node.val });
+      levelList.push({ level: level, nodeVal: node.val });
       if (node.left) {
         queue.push(node.left);
         max = Math.max(node.left.val, max);
