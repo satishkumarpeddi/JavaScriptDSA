@@ -14,6 +14,7 @@ class Student {
     console.log(`${this.name} is taking leave.`);
   }
 }
+
 const StudentA = new Student("Alice", 20);
 StudentA.takeExam();
 StudentA.takeLeave();
